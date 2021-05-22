@@ -8,13 +8,13 @@ public class Application {
 
         //SepakerService service = new SepakerServiceImpl();
 
-        SpeakerService service = appContext.getBean("SpeakerService", SpeakerService.class);
+        SpeakerService service = appContext.getBean("speakerService", SpeakerService.class);
 
         System.out.println(service);
 
         System.out.println(service.findAll().get(0).getFirstName()  + " " +  service.findAll().get(0).getLastName());
 
-        SpeakerService service2 = appContext.getBean("SpeakerService", SpeakerService.class);
+        SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
 
         System.out.println(service2);
     }
